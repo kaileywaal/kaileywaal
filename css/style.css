@@ -1,5 +1,9 @@
 :root {
-  --padding-main: 2rem;
+  --padding-main: 5rem;
+  --color-text: #555;
+  --color-primary: #333;
+  --color-secondary: #222;
+  --color-accent: #444;
 }
 
 *,
@@ -22,32 +26,76 @@ h1 {
 
 h2 {
   font-size: 2.4rem;
+  margin: 20px 0;
 }
 
 h3 {
   font-size: 2rem;
   font-family: "Lato", sans-serif;
+  margin: 10px 0;
 }
 
 p {
   font-size: 1.8rem;
   font-family: "Lato", sans-serif;
+  margin: 10px 0;
 }
 
 a {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
   font-family: "Lato", sans-serif;
+  color: var(--color-text);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-secondary);
+  transition: scale 0.25s linear;
+  position: relative;
+}
+
+a:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-accent);
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transform-origin: left;
+  transform: scale(0);
+  transition: 0.25s linear;
+}
+
+a:hover:before {
+  transform: scale(1);
 }
 
 /* GENERAL */
 body {
-  max-width: 650px;
-  margin: auto;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: var(--padding-main);
 }
 
-/* LINKS */
+section:after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: var(--color-accent);
+  display: inline-block;
+  margin-top: 5rem;
+}
 
 /* NAV BAR */
+header a {
+  border-bottom: 3px solid var(--color-secondary);
+}
+
+header a:before {
+  height: 3px;
+  bottom: -3px;
+}
+
 .hamburger-icon {
   display: inline-block;
   cursor: pointer;
@@ -97,7 +145,11 @@ body {
   list-style: none;
 }
 
-@media screen and (min-width: 650px) {
+.nav-bar a {
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 750px) {
   .hamburger-icon {
     display: none;
   }
@@ -107,11 +159,27 @@ body {
     flex-direction: row;
     height: 6rem;
     width: 400px;
+    align-items: center;
   }
 
   .logo {
-    flex-grow: 0.5;
-    display: inline-block;
+    display: flex;
+    background-color: var(--color-text);
+    width: 5rem;
+    height: 5rem;
+    margin-right: 5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo a {
+    color: white;
+    border-bottom: none;
+  }
+
+  /* prevent default link behavior */
+  .logo a:hover:before {
+    transform: scale(0);
   }
 
   .nav-items {
@@ -119,4 +187,42 @@ body {
     justify-content: space-between;
     flex-grow: 1;
   }
+}
+
+/* PROJECTS */
+.project a {
+  font-size: 1.6rem;
+  margin-right: 1.2rem;
+  font-weight: 600;
+}
+
+.project {
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 650px) {
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+  .project {
+    margin-bottom: 0;
+  }
+}
+/* FOOTER */
+footer {
+  margin-top: 6rem;
+}
+
+.line {
+  width: 60px;
+  height: 2px;
+  background-color: var(--color-accent);
+  display: inline-block;
+}
+
+.get-in-touch {
+  margin: 2rem 0;
 }
