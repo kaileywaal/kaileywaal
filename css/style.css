@@ -1,0 +1,122 @@
+:root {
+  --padding-main: 2rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* FONTS */
+html {
+  font-size: 62.5%;
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  font-size: 1.8rem;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+}
+
+/* GENERAL */
+body {
+  max-width: 650px;
+  margin: auto;
+}
+
+/* LINKS */
+
+/* NAV BAR */
+.hamburger-icon {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  z-index: 1000;
+}
+
+.bar {
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  margin: 8px 0;
+  transition: transform 0.4s;
+}
+
+.collapsible--open .bar1 {
+  transform: translateY(11px) rotate(45deg);
+}
+
+.collapsible--open .bar2 {
+  opacity: 0;
+}
+
+.collapsible--open .bar3 {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+.nav-bar {
+  display: none;
+}
+
+.nav-bar-collapsible--open {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.nav-bar-collapsible--open .logo {
+  display: none;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+@media screen and (min-width: 650px) {
+  .hamburger-icon {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    height: 6rem;
+    width: 400px;
+  }
+
+  .logo {
+    flex-grow: 0.5;
+    display: inline-block;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
