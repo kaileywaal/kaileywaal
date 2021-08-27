@@ -47,7 +47,8 @@ h3 {
   margin: 10px 0;
 }
 
-p {
+p,
+li {
   font-size: 1.8rem;
   font-family: "Lato", sans-serif;
   margin: 10px 0;
@@ -260,15 +261,9 @@ header a:before {
   z-index: 1000;
 }
 
-input:checked + .slider {
-  /* background-color: var(--color-background); */
-}
-
-input:checked + .slider:before {
+/* .switch input:checked + .slider:before {
   transform: translateX(22px);
-  /* border-color: #cfcfcf;
-  background-color: #efefef; */
-}
+} */
 
 .slider.round {
   border-radius: 34px;
@@ -336,4 +331,29 @@ footer {
 
 .get-in-touch {
   margin: 2rem 0;
+}
+
+/* PROJECT DETAILS */
+.technologies li {
+  font-size: 1.8rem;
+  color: var(--color-primary);
+  list-style: none;
+  font-weight: bold;
+  display: inline-block;
+  padding-right: 1rem;
+  margin: 0;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.technologies li:before {
+  content: "#";
+}
+
+.links {
+  margin-top: 2rem;
+}
+
+.links a {
+  margin-right: 2rem;
 }
