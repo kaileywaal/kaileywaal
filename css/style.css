@@ -182,6 +182,11 @@ header a:before {
   margin-bottom: 2rem;
 }
 
+.nav-bar-collapsible--open .container {
+  transform: scale(1.4);
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 650px) {
   .hamburger-icon {
     display: none;
@@ -191,7 +196,7 @@ header a:before {
     display: flex;
     flex-direction: row;
     height: 6rem;
-    width: 500px;
+    width: 100%;
     align-items: center;
   }
 
@@ -200,7 +205,6 @@ header a:before {
     background-color: var(--color-secondary);
     width: 5rem;
     height: 5rem;
-    margin-right: 5rem;
     align-items: center;
     justify-content: center;
   }
@@ -217,13 +221,19 @@ header a:before {
 
   .nav-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-grow: 1;
     margin-right: 5rem;
   }
 }
 
 /* DARK MODE TOGGLE */
+.container {
+  justify-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .switch {
   display: flex;
   height: 27px;
@@ -261,9 +271,9 @@ header a:before {
   z-index: 1000;
 }
 
-/* .switch input:checked + .slider:before {
+.switch input:checked + .slider:before {
   transform: translateX(22px);
-} */
+}
 
 .slider.round {
   border-radius: 34px;
@@ -306,7 +316,7 @@ header a:before {
   margin-bottom: 4rem;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 850px) {
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -356,4 +366,36 @@ footer {
 
 .links a {
   margin-right: 2rem;
+}
+
+.details {
+  font-weight: bold;
+}
+
+.features {
+  width: 90%;
+  margin: 3rem auto;
+}
+
+article {
+  margin-bottom: 6rem;
+}
+
+/* CONTACT PAGE */
+.contact-page {
+  height: 100vh;
+}
+
+.contact-page main {
+  margin: 4rem 0;
+}
+
+/* CHANGE HIGHLIGHT COLOR */
+::selection {
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+::-moz-selection {
+  background: var(--color-primary);
+  color: var(--color-background);
 }
