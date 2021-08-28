@@ -187,6 +187,27 @@ header a:before {
   margin-top: 2rem;
 }
 
+.social-links {
+  flex-grow: 1;
+  display: flex;
+  position: relative;
+  top: 5px;
+}
+
+.social-links a {
+  padding-right: 3rem;
+}
+
+.social-links svg {
+  fill: var(--color-text);
+  transition: fill 0.2s;
+  height: 2rem;
+}
+
+svg:hover {
+  fill: var(--color-secondary);
+}
+
 @media screen and (min-width: 650px) {
   .hamburger-icon {
     display: none;
@@ -209,13 +230,15 @@ header a:before {
     justify-content: center;
   }
 
-  .logo a {
+  .logo a,
+  .social-links a {
     color: var(--color-background);
     border-bottom: none;
   }
 
   /* prevent default link behavior */
-  .logo a:hover:before {
+  .logo a:hover:before,
+  .social-links a:hover:before {
     transform: scale(0);
   }
 
@@ -223,7 +246,6 @@ header a:before {
     display: flex;
     justify-content: space-evenly;
     flex-grow: 1;
-    margin-right: 5rem;
   }
 }
 
