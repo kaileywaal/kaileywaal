@@ -261,6 +261,10 @@ svg:hover {
   }
 }
 
+.italic {
+  font-style: italic;
+}
+
 /* DARK MODE TOGGLE */
 .container {
   justify-self: flex-end;

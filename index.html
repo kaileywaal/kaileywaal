@@ -1,246 +1,331 @@
 <!DOCTYPE html>
 <html lang="en" class="light-mode">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css" id="css-stylesheet">
-    
-    <title>Kailey Waal</title>
-</head>
-<body>
-    <header>
-        <div class="nav-bar">
-            <span class="logo"><a href="index.html">KW</a></span>
-            <ul class="nav-items">
-                <li class="nav-item"><a href="index.html">about</a></li>
-                <li class="nav-item"><a href="projects.html">projects</a></li>
-                <li class="nav-item"><a href="contact.html">contact</a></li>
-            </ul>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/kailey-waal/" target="_blank">
-                    <i class="linkedin-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    </i>
-                </a>
-                <a href="https://github.com/kaileywaal" target="_blank">
-                    <i class="github-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/></svg>
-                    </i>
-                </a>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" id="css-stylesheet" />
 
-            <div class="container">
-                <label class="switch" for="checkbox" title="Change color scheme to dark mode">
-                  <input type="checkbox" id="checkbox" onclick="toggleTheme()"/>
-                  <div class="slider round"></div>
-                  <div class="toggle-sun"><?xml version="1.0" encoding="iso-8859-1"?>
-                    <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                    <g>
-                        <g>
-                            <path d="M256,128c-70.579,0-128,57.421-128,128s57.421,128,128,128s128-57.421,128-128S326.579,128,256,128z M256,358.4
+    <title>Kailey Waal</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <span class="logo"><a href="index.html">KW</a></span>
+        <ul class="nav-items">
+          <li class="nav-item"><a href="index.html">about</a></li>
+          <li class="nav-item"><a href="projects.html">projects</a></li>
+          <li class="nav-item"><a href="contact.html">contact</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/kailey-waal/" target="_blank">
+            <i class="linkedin-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                />
+              </svg>
+            </i>
+          </a>
+          <a href="https://github.com/kaileywaal" target="_blank">
+            <i class="github-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"
+                />
+              </svg>
+            </i>
+          </a>
+        </div>
+
+        <div class="container">
+          <label
+            class="switch"
+            for="checkbox"
+            title="Change color scheme to dark mode"
+          >
+            <input type="checkbox" id="checkbox" onclick="toggleTheme()" />
+            <div class="slider round"></div>
+            <div class="toggle-sun">
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+              >
+                <g>
+                  <g>
+                    <path
+                      d="M256,128c-70.579,0-128,57.421-128,128s57.421,128,128,128s128-57.421,128-128S326.579,128,256,128z M256,358.4
                             c-56.559,0-102.4-45.841-102.4-102.4c0-56.559,45.841-102.4,102.4-102.4c56.559,0,102.4,45.841,102.4,102.4
-                            C358.4,312.559,312.559,358.4,256,358.4z"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <path d="M256,0c-7.074,0-12.8,5.726-12.8,12.8v76.8c0,7.074,5.726,12.8,12.8,12.8c7.074,0,12.8-5.726,12.8-12.8V12.8
-                                C268.8,5.726,263.074,0,256,0z"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <path d="M256,409.6c-7.074,0-12.8,5.726-12.8,12.8v76.8c0,7.074,5.726,12.8,12.8,12.8c7.074,0,12.8-5.726,12.8-12.8v-76.8
-                                C268.8,415.326,263.074,409.6,256,409.6z"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <path d="M499.2,243.2h-76.8c-7.074,0-12.8,5.726-12.8,12.8c0,7.074,5.726,12.8,12.8,12.8h76.8c7.074,0,12.8-5.726,12.8-12.8
-                                C512,248.926,506.274,243.2,499.2,243.2z"/>
-                            </g>
-                        </g>
-                    <g>
-                        <g>
-                            <path d="M89.6,243.2H12.8C5.726,243.2,0,248.926,0,256c0,7.074,5.726,12.8,12.8,12.8h76.8c7.074,0,12.8-5.726,12.8-12.8
-                            C102.4,248.926,96.674,243.2,89.6,243.2z"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <path d="M437.018,74.982c-5-5.001-13.099-5.001-18.099,0l-54.306,54.306c-5.001,5.001-5.001,13.099,0,18.099
-                                c5,5,13.099,5,18.099,0l54.306-54.306C442.018,88.081,442.018,79.983,437.018,74.982z"/>
-                            </g>
-                        </g>
-                        <g>
-                            <g>
-                            <path d="M147.388,364.612c-5.001-5.001-13.099-5.001-18.099,0l-54.306,54.306c-5.001,5.001-5.001,13.099,0,18.099
-                                c5.001,5.001,13.099,5.001,18.099,0l54.306-54.306C152.388,377.711,152.388,369.613,147.388,364.612z"/>
-                            </g>
-                        </g>
-                    <g>
-                        <g>
-                            <path d="M437.018,418.918l-54.306-54.306c-5.001-5.001-13.099-5.001-18.099,0c-5.001,5-5.001,13.099,0,18.099l54.306,54.306
-                            c5.001,5.001,13.099,5.001,18.099,0C442.018,432.017,442.018,423.919,437.018,418.918z"/>
-                        </g>
-                    </g>
-                    <g>
-                        <g>
-                            <path d="M147.388,129.289L93.082,74.982c-5.001-5.001-13.099-5.001-18.099,0c-5.001,5-5.001,13.099,0,18.099l54.306,54.306
-                            c5.001,5,13.099,5,18.099,0C152.388,142.387,152.388,134.289,147.388,129.289z"/>
-                        </g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                </svg>
-                    </div>
-                    <div class="toggle-moon"><?xml version="1.0" encoding="iso-8859-1"?>
-                        <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 63 63" style="enable-background:new 0 0 63 63;" xml:space="preserve">
-                        <g>
-                            <g id="group-6svg">
-                                <path id="path-1_26_" d="M32.524,63c-8.687,0-16.855-3.383-22.998-9.526S0,39.164,0,30.476c0-8.687,3.382-16.855,9.526-22.998
+                            C358.4,312.559,312.559,358.4,256,358.4z"
+                    />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M256,0c-7.074,0-12.8,5.726-12.8,12.8v76.8c0,7.074,5.726,12.8,12.8,12.8c7.074,0,12.8-5.726,12.8-12.8V12.8
+                                C268.8,5.726,263.074,0,256,0z"
+                    />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M256,409.6c-7.074,0-12.8,5.726-12.8,12.8v76.8c0,7.074,5.726,12.8,12.8,12.8c7.074,0,12.8-5.726,12.8-12.8v-76.8
+                                C268.8,415.326,263.074,409.6,256,409.6z"
+                    />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M499.2,243.2h-76.8c-7.074,0-12.8,5.726-12.8,12.8c0,7.074,5.726,12.8,12.8,12.8h76.8c7.074,0,12.8-5.726,12.8-12.8
+                                C512,248.926,506.274,243.2,499.2,243.2z"
+                    />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M89.6,243.2H12.8C5.726,243.2,0,248.926,0,256c0,7.074,5.726,12.8,12.8,12.8h76.8c7.074,0,12.8-5.726,12.8-12.8
+                            C102.4,248.926,96.674,243.2,89.6,243.2z"
+                    />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M437.018,74.982c-5-5.001-13.099-5.001-18.099,0l-54.306,54.306c-5.001,5.001-5.001,13.099,0,18.099
+                                c5,5,13.099,5,18.099,0l54.306-54.306C442.018,88.081,442.018,79.983,437.018,74.982z"
+                    />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M147.388,364.612c-5.001-5.001-13.099-5.001-18.099,0l-54.306,54.306c-5.001,5.001-5.001,13.099,0,18.099
+                                c5.001,5.001,13.099,5.001,18.099,0l54.306-54.306C152.388,377.711,152.388,369.613,147.388,364.612z"
+                    />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M437.018,418.918l-54.306-54.306c-5.001-5.001-13.099-5.001-18.099,0c-5.001,5-5.001,13.099,0,18.099l54.306,54.306
+                            c5.001,5.001,13.099,5.001,18.099,0C442.018,432.017,442.018,423.919,437.018,418.918z"
+                    />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M147.388,129.289L93.082,74.982c-5.001-5.001-13.099-5.001-18.099,0c-5.001,5-5.001,13.099,0,18.099l54.306,54.306
+                            c5.001,5,13.099,5,18.099,0C152.388,142.387,152.388,134.289,147.388,129.289z"
+                    />
+                  </g>
+                </g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+              </svg>
+            </div>
+            <div class="toggle-moon">
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 63 63"
+                style="enable-background: new 0 0 63 63"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="group-6svg">
+                    <path
+                      id="path-1_26_"
+                      d="M32.524,63c-8.687,0-16.855-3.383-22.998-9.526S0,39.164,0,30.476c0-8.687,3.382-16.855,9.526-22.998
                                     c3.248-3.248,7.095-5.732,11.432-7.38c0.554-0.209,1.176-0.076,1.593,0.341c0.418,0.418,0.552,1.042,0.342,1.594
                                     c-4.128,10.864-1.499,23.18,6.697,31.376c5.565,5.564,12.967,8.629,20.842,8.629c3.619,0,7.163-0.65,10.534-1.931
                                     c0.556-0.209,1.177-0.076,1.594,0.342c0.418,0.417,0.552,1.041,0.342,1.593c-1.648,4.338-4.132,8.184-7.381,11.432
                                     C49.379,59.617,41.211,63,32.524,63z M19.044,4.222c-2.738,1.396-5.216,3.197-7.397,5.378C6.071,15.176,3,22.59,3,30.476
                                     c0,7.887,3.071,15.3,8.647,20.877C17.223,56.929,24.637,60,32.524,60c7.886,0,15.3-3.071,20.876-8.647
                                     c2.181-2.18,3.981-4.658,5.377-7.395c-2.715,0.718-5.509,1.08-8.345,1.08c-8.677,0-16.832-3.377-22.963-9.507
-                                    C19.249,27.311,16.111,15.331,19.044,4.222z"/>
-                            </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        </svg>
-                        </div>
-                </label>
+                                    C19.249,27.311,16.111,15.331,19.044,4.222z"
+                    />
+                  </g>
+                </g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+              </svg>
             </div>
+          </label>
         </div>
-        <div class="hamburger-icon" onclick="toggleMenu(this)">
-            <div class="bar bar1"></div>
-          <div class="bar bar2"></div>
-          <div class="bar bar3"></div>
-        </div>
+      </div>
+      <div class="hamburger-icon" onclick="toggleMenu(this)">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
     </header>
     <main>
-        <section>
-            <h1>Hey, I'm Kailey!</h1>
-            <h2>Full stack software developer.</h2>
-            <p>I was the kid who won art competitions but also loved algebra. 
-               So when I discovered coding I quickly became obsessed—
-                my creative side gets to come up with tons of ways to solve challenging problems and then my nerd side comes out to move forward with the best option. 
-                Nothing captures my attention (or makes me forget to eat) more.</p>
-        </section>
-        <section>
-            <h2>Featured Projects</h2>
-            <div class="projects">
-                <article class="project">
-                    <h3>TEnmo Money Transfer App</h3>
-                    <p>A Venmo-clone application that allows users to send, request, and approve money transfers.</p>
-                    <div>
-                        <a href="projects.html#tenmo">details</a>
-                        <a href="https://github.com/kaileywaal/TEnmo" target="_blank">view code</a>
-                    </div>
-                </article>
-                <article class="project">
-                    <h3>Euchre Card Game</h3>
-                    <p>A CLI application that allows 1-4 players to play a full game of Euchre against  the computer.</p>
-                    <div>
-                        <a href="projects.html#euchre">details</a>
-                        <a href="https://github.com/kaileywaal/Euchre" target="_blank">view code</a>
-                    </div>
-                </article>
-                <article class="project">
-                    <h3>Virtual Vending Machine</h3>
-                    <p>A vending machine CLI application that allows users to feed money, select products, and finish their transactions to receive change.</p>
-                    <div>
-                        <a href="projects.html#vending-machine">details</a>
-                        <a href="https://github.com/kaileywaal/VendingMachine" target="_blank">view code</a>
-                    </div>
-                </article>
-                <article class="project">
-                    <h3>IP Address Tracker</h3>
-                    <p>An app that allows you to search for an IP address or domain and see its location on a map. </p>
-                    <div>
-                        <a href="projects.html#ip-address-tracker">details</a>
-                        <a href="https://github.com/kaileywaal/ip-address-tracker-hub" target="_blank">view code</a>
-                        <a href="https://kaileywaal.github.io/ip-address-tracker-hub/" target="_blank">view live</a>
-                    </div>
-                </article>
+      <section>
+        <h1>Hey, I'm Kailey!</h1>
+        <h2>Full stack software developer.</h2>
+        <p>
+          I was the kid who won art competitions but also loved algebra. So when
+          I discovered coding I quickly became obsessed— my creative side gets
+          to come up with tons of ways to solve challenging problems and then my
+          nerd side comes out to move forward with the best option. Nothing
+          captures my attention (or makes me forget to eat) more.
+        </p>
+      </section>
+      <section>
+        <h2>Featured Projects</h2>
+        <div class="projects">
+          <article class="project">
+            <h3>Virtual Stock Market Game</h3>
+            <p>
+              A virtual stock market game that allows users to compete with
+              their friends to see who can make the most money in the stock
+              market in a given period of time.
+            </p>
+            <div>
+              <a href="projects.html#virtual-stock-market">details</a>
+              <a
+                href="https://github.com/kaileywaal/virtual-stock-market"
+                target="_blank"
+                >view code</a
+              >
+              <a
+                href="https://nlr3-stock-market-game.netlify.app/"
+                target="_blank"
+                >view live</a
+              >
             </div>
-        </section>
+          </article>
+          <article class="project">
+            <h3>Faith Family Empowerment Center</h3>
+            <p>
+              A website I designed and developed for a nonprofit organization to
+              improve user experience and increase donation revenue.
+            </p>
+            <div>
+              <a href="projects.html#ffec">details</a>
+              <a href="https://github.com/kaileywaal/ffec" target="_blank"
+                >view code</a
+              >
+              <a href="https://ffec.github.io/ffec-site/" target="_blank"
+                >view live</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <h3>IP Address Tracker</h3>
+            <p>
+              An app that allows you to search for an IP address or domain and
+              see its location on a map.
+            </p>
+            <div>
+              <a href="projects.html#ip-address-tracker">details</a>
+              <a
+                href="https://github.com/kaileywaal/ip-address-tracker-hub"
+                target="_blank"
+                >view code</a
+              >
+              <a
+                href="https://kaileywaal.github.io/ip-address-tracker-hub/"
+                target="_blank"
+                >view live</a
+              >
+            </div>
+          </article>
+          <article class="project">
+            <h3>TEnmo Money Transfer App</h3>
+            <p>
+              A Venmo-clone application that allows users to send, request, and
+              approve money transfers.
+            </p>
+            <div>
+              <a href="projects.html#tenmo">details</a>
+              <a href="https://github.com/kaileywaal/TEnmo" target="_blank"
+                >view code</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
     <footer>
-        <h2 class="get-in-touch">Get in touch!</h2>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/kailey-waal/" target="_blank">kaileywaal</a></p>
-        <p>GitHub: <a href="https://github.com/kaileywaal" target="_blank">kaileywaal</a></p>
-        <p>Email: <a href="mailto:kaileynwaal@gmail.com">kaileynwaal@gmail.com</a></p>
+      <h2 class="get-in-touch">Get in touch!</h2>
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/kailey-waal/" target="_blank"
+          >kaileywaal</a
+        >
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/kaileywaal" target="_blank">kaileywaal</a>
+      </p>
+      <p>
+        Email: <a href="mailto:kaileynwaal@gmail.com">kaileynwaal@gmail.com</a>
+      </p>
     </footer>
-    
 
     <script src="/js/app.js"></script>
-</body>
+  </body>
 </html>
